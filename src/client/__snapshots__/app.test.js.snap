@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="app-header-title"
+        >
+          Welcome to React Boilerplate App~
+        </h1>,
+        <p
+          className="app-header-content"
+        >
+          Made by 
+          <a
+            href="https://github.com/sophiedophie"
+          >
+            sophiedophie👩🏻‍💻
+          </a>
+        </p>,
+      ],
+      "className": "app",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Welcome to React Boilerplate App~",
+          "className": "app-header-title",
+        },
+        "ref": null,
+        "rendered": "Welcome to React Boilerplate App~",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Made by ",
+            <a
+              href="https://github.com/sophiedophie"
+            >
+              sophiedophie👩🏻‍💻
+            </a>,
+          ],
+          "className": "app-header-content",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Made by ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "sophiedophie👩🏻‍💻",
+              "href": "https://github.com/sophiedophie",
+            },
+            "ref": null,
+            "rendered": "sophiedophie👩🏻‍💻",
+            "type": "a",
+          },
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="app-header-title"
+          >
+            Welcome to React Boilerplate App~
+          </h1>,
+          <p
+            className="app-header-content"
+          >
+            Made by 
+            <a
+              href="https://github.com/sophiedophie"
+            >
+              sophiedophie👩🏻‍💻
+            </a>
+          </p>,
+        ],
+        "className": "app",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Welcome to React Boilerplate App~",
+            "className": "app-header-title",
+          },
+          "ref": null,
+          "rendered": "Welcome to React Boilerplate App~",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Made by ",
+              <a
+                href="https://github.com/sophiedophie"
+              >
+                sophiedophie👩🏻‍💻
+              </a>,
+            ],
+            "className": "app-header-content",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Made by ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "sophiedophie👩🏻‍💻",
+                "href": "https://github.com/sophiedophie",
+              },
+              "ref": null,
+              "rendered": "sophiedophie👩🏻‍💻",
+              "type": "a",
+            },
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

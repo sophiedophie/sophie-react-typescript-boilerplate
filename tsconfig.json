@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "checkJs": false,
+    "noImplicitAny": false,
+    "downlevelIteration": true,
+    "lib": ["es2017", "dom", "dom.iterable"],
+    "module": "commonjs",
+    "target": "es5",
+    "skipLibCheck": true,
+    "jsx": "react",
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "errorsAsWarnings": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
