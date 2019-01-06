@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
@@ -14,7 +15,7 @@ const commonRules = [
       }
     }
   },
-];
+]
 
 const clientRules = [
   {
@@ -41,7 +42,9 @@ const clientRules = [
     }
   }
 ];
+
 const client = {
+  mode: 'development',
   name: 'client',
   entry: {
     client: path.resolve(__dirname, '../src/client/index.js')
@@ -63,10 +66,11 @@ const client = {
     new HtmlWebPackPlugin({
       template: 'src/client/index.html'
     })
-  ]
+  ],
 };
 
 const server = {
+  mode: 'development',
   name: 'server',
   target: 'node',
   entry: {
@@ -82,7 +86,10 @@ const server = {
   module: {
     rules: [...commonRules]
   },
-  externals: [nodeExternals()]
+  externals: [nodeExternals()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
 
 module.exports = [client, server];

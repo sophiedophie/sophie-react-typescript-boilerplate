@@ -9,6 +9,9 @@
 npm i
 npm run build
 npm run start
+
+// for development
+npm run dev
 ```
 
 ## Structure
@@ -27,7 +30,6 @@ npm run start
 - There are sample test codes in ```./src/client``` or ```./src/server```
 
 ## TODO
-- Need to add HMR to check the diff for development environment
 - When you want to grow your app then you might need...
   - [redux](https://redux.js.org/) and relative modules,
   - [react-router](https://github.com/ReactTraining/react-router) and other stuffs. Feel free to add when you need them.

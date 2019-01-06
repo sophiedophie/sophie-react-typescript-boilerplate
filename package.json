@@ -9,7 +9,8 @@
     "build-babel": "npm run build-babel-server && npm run build-babel-client",
     "build-babel-server": "babel src/server --out-dir ./dist",
     "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
-    "start": "node ./dist/server.js",
+    "start": "NODE_ENV=production npm run build && node ./dist/server.js",
+    "dev": "webpack-dev-server --mode development  --config ./config/webpack.dev.config.js",
     "test": "jest ./src"
   },
   "jest": {
@@ -58,6 +59,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
